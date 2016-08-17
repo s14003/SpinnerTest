@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 Spinner spinner = (Spinner) adapterView;
-                showToast(Integer.toString(spinner.getSelectedItemPosition()));
+                showToast(String.valueOf(productSpinner.getSelectedItem()));
             }
 
             @Override
